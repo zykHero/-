@@ -1,0 +1,74 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background:#eff7ff;
+}
+#gameConfig{
+    margin: 20px;
+}
+#import label{
+    float: left;
+}
+.cfg{
+    margin-bottom: 10px;
+}
+.cfg label{
+    font-weight: 600;
+}
+#cfg_input{
+    margin-left: 220px;
+}
+#resultInfo{
+    margin-top: 10px;
+    color: rgba(153, 153, 153, 0.8);
+}
+#resultInfo span{
+    font-weight: 600;
+}
+#gameClass{
+    margin-left: 150px;
+    width: 70px;
+}
+#operateGame{
+    height: 400px;
+    margin: 20px;
+}
+#sourBox {
+    width: 48%;
+    float: left;
+    height: 400px;
+    position: relative;
+    border: 1px solid rgba(180, 174, 167, 0.8);
+    border-right: 0
+}
+#resultBox {
+    width: 50%;
+    float: left;
+    height: 400px;
+    position: relative;
+    border: 1px solid rgba(180, 174, 167, 0.8);
+    border-left: 1px solid rgba(180, 174, 167, 0.8);
+}
+.preView{
+    float: left;
+}
+.block_col{
+    float: left;
+}
+.splitImage_box{
+    float: left;
+    overflow: hidden;
+    cursor: move;
+}
+.splitImage_box img{
+    transform-origin:50%  50%;
+}
+.hightBlock{
+    border: 1px red solid;
+}
+button{
+    width: 60px;
+}

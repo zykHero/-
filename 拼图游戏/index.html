@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拼图游戏</title>
+</head>
+<link type="text/css" rel="stylesheet" href="style/sytle.css">
+<script type="application/javascript" src="lib/main.js"></script>
+<script type="application/javascript" src="lib/createPuzzle.js"></script>
+<body>
+<!--游戏头部-->
+<header>
+    <marquee>
+        <span style="font-weight: bolder;font-size: 40px;color: yellowgreen;">
+            拼图乐园欢迎您
+        </span>
+    </marquee>
+</header>
+<!--游戏区域-->
+<div class="gameContent">
+    <!--游戏配置区域-->
+    <div id="gameConfig">
+        <div id="import" class="cfg">
+            <label>导入图片</label>
+            <div id="cfg_input">
+                <form>
+                    <input id="importImage" type="file" multiple accept="image/*" name="image">
+                </form>
+            </div>
+        </div>
+        <div class="cfg">
+            <label>选择难度</label>
+            <select id="gameClass" name="sele">
+                <option value="1">初级</option>
+                <option value="2">中级</option>
+                <option value="3">高级</option>
+                <option value="4">大师</option>
+                <option value="5">变态</option>
+            </select>
+        </div>
+        <div id="funBtn">
+            <button id="start">开始</button>
+            <button id="restart" style="margin-left: 45px">再来一次</button>
+            <button id="finish" style="margin-left: 45px">完成</button>
+        </div>
+        <div id="resultInfo">
+           <span>备注：</span>请以右边区域边框为界限进行拼图游戏，双击拼图进行旋转。
+        </div>
+    </div>
+    <div id="operateGame">
+        <!--拖拽图片的源区域-->
+        <div id="sourBox"></div>
+        <!--拖拽的目的区域-->
+        <div id="resultBox"></div>
+    </div>
+</div>
+</body>
+</html>
